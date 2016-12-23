@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetMember</servlet-name>
+    <servlet-class>servlet.GetMember</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddMember</servlet-name>
+    <servlet-class>servlet.AddMember</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetPay</servlet-name>
+    <servlet-class>servlet.GetPay</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetFront</servlet-name>
+    <servlet-class>servlet.GetFront</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ModifyPassword</servlet-name>
+    <servlet-class>servlet.ModifyPassword</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ModifyMember</servlet-name>
+    <servlet-class>servlet.ModifyMember</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetRecord</servlet-name>
+    <servlet-class>servlet.GetRecord</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/servlet/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetMember</servlet-name>
+    <url-pattern>/servlet/GetMember</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddMember</servlet-name>
+    <url-pattern>/servlet/AddMember</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetPay</servlet-name>
+    <url-pattern>/servlet/GetPay</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetFront</servlet-name>
+    <url-pattern>/servlet/GetFront</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModifyPassword</servlet-name>
+    <url-pattern>/servlet/ModifyPassword</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModifyMember</servlet-name>
+    <url-pattern>/servlet/ModifyMember</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetRecord</servlet-name>
+    <url-pattern>/servlet/GetRecord</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
