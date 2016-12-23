@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC  
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"  
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">  
+	       	
+		<hibernate-configuration>  
+		
+        <session-factory>   
+      		 <!--C3P0配置 -->
+        	<property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
+        	<property name="hibernate.c3p0.max_size">20</property>
+        	<property name="hibernate.c3p0.min_size">5</property>
+        	<property name="hibernate.c3p0.timeout">120</property>
+        	<property name="automaticTestTable">Test</property>
+        	<property name="hibernate.c3p0.max_statements">100</property>
+        	<property name="hibernate.c3p0.idle_test_period">120</property>
+        	<property name="hibernate.c3p0.acquire_increment">1</property>
+       		<property name="c3p0.testConnectionOnCheckout">true</property>
+        	<property name="c3p0.idleConnectionTestPeriod">18000</property>
+        	<property name="c3p0.maxIdleTime">25000</property>
+       	    <property name="c3p0.idle_test_period">120</property>
+            <!-- Database connection settings -->  
+            <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver </property>  
+            <property name="connection.url">jdbc:oracle:thin:@localhost:1521:ORCL </property>  
+            <property name="connection.username">gym</property>  
+            <property name="connection.password">gym</property>  
+      
+      
+            <!-- SQL dialect -->  
+            <property name="dialect">org.hibernate.dialect.OracleDialect</property>  
+      
+      
+            <!-- Echo all executed SQL to stdout -->  
+            <property name="show_sql">true</property>  
+            <property name="format_sql">true</property>  
+            <!-- Drop and re-create the database schema on startup -->  
+            <property name="hbm2ddl.auto">update</property>  
+      
+            <mapping class="com.gym.entity.Boss" />  
+            <mapping class="com.gym.entity.Coach" />
+            <mapping class="com.gym.entity.Front" />
+            <mapping class="com.gym.entity.Member" />
+            <mapping class="com.gym.entity.Pay" />
+            <mapping class="com.gym.entity.Perm_Role" />
+            <mapping class="com.gym.entity.Permittion" />
+            <mapping class="com.gym.entity.RateList" />
+            <mapping class="com.gym.entity.Record" />
+        </session-factory>  
+      
+    </hibernate-configuration>  
+  
